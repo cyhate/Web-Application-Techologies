@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MIDTERM.com</title>
+
+<style>
+body { 
+ 	background-color:gray;
+ 	text-align: center;
+ 	font-size: 25px;
+}
+
+h1 { 
+	color: blue; 
+	
+}
+
+h2 { 
+	color: green; 
+	
+}
+
+#bcal { 
+	background-color: green;
+	font-size: 30px;
+	
+        
+}
+#bclear { 
+	background-color: red;
+	font-size: 25px; 
+	
+}
+#clearform {
+	background-color: red;
+	font-size: 25px; 
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Υπολογισμός Μέσου όρου μαθημάτων:</h1><br><br>
+<form style="text-align:center;"> 
+Όνομα Φοιτητή:<br> 
+<input type="text" name="firstname" value="" id="name" ><br><br> 
+Αριθμός Φοιτητικής Ταυτότητας:<br> 
+<input type="number" name="id" value="" id="tautotita" ><br><br>
+Μάθημα 1:<br> 
+<input type="number" name="class1" value="" min="0" max="10" id="a" ><br><br> 
+Μάθημα 2:<br> 
+<input type="number" name="class2" value="" min="0" max="10" id="b" ><br><br> 
+Μάθημα 3:<br> 
+<input type="number" name="class3" value="" min="0" max="10" id="c" ><br><br>
+Μάθημα 4:<br> 
+<input type="number" name="class4" value="" min="0" max="10" id="d" ><br><br>
+<input type="reset" value="Clear Form" id="clearform">
+</form>
+<br>
+<h2>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p><br>
+</h2>
+<button id="bcal" onclick="mesosOROS(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value)"> Calculate </button><br><br>
+<button id="bclear" onclick="clearALL(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value,document.getElementById('name').value,document.getElementById('tautotita').value,document.getElementById('demo').value,document.getElementById('demo2').value,document.getElementById('demo3').value)"> Clear Text </button>
+
+<script>
+function mesosOROS() {
+ var a,b,c,d,name;
+ var mesos = 0;
+ var result;
+
+a = document.getElementById('a').value;
+b = document.getElementById('b').value;
+c = document.getElementById('c').value;
+d = document.getElementById('c').value;
+name = document.getElementById('name').value;
+
+
+a = parseFloat(a);
+b = parseFloat(b);
+c = parseFloat(c);
+d = parseFloat(d);
+
+mesos = (a + b + c + d)/4;
+ 
+if (mesos >= 5) {
+	result = "PASS!";
+}
+else if (mesos < 5) {
+	result = "FAIL :)";
+}
+
+document.getElementById("demo").innerHTML = name;
+document.getElementById("demo2").innerHTML = mesos;
+document.getElementById("demo3").innerHTML = result;
+}
+</script>
+
+<script>
+
+function clearALL() {
+
+var a,b,c,d,name,tautotita,demo,demo2,demo3;
+
+
+a = document.getElementById('a').value;
+b = document.getElementById('b').value;
+c = document.getElementById('c').value;
+d = document.getElementById('c').value;
+name = document.getElementById('name').value;
+tautotita = document.getElementById('tautotita').value;
+demo = document.getElementById('demo').value;
+demo2 = document.getElementById('demo2').value;
+demo3 = document.getElementById('demo3').value;
+
+
+document.getElementById('a').innerHTML = "";
+document.getElementById('b').innerHTML = "";
+document.getElementById('c').innerHTML = "";
+document.getElementById('d').innerHTML = "";
+document.getElementById('name').innerHTML = "";
+document.getElementById('tautotita').innerHTML = "";
+document.getElementById('demo').innerHTML = "";
+document.getElementById('demo2').innerHTML = "";
+document.getElementById('demo3').innerHTML = "";
+
+}
+</script>
+
+</body>
+</html>
+
+

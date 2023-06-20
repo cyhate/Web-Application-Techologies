@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MetaNUP.ac.cy</title>
+
+<style>
+body { 
+background-color:lightblue;
+}
+
+h1 { 
+	color: blue; 
+	text-align: center;
+}
+
+h2 { 
+	color: yellow; 
+	text-align: center;
+}
+
+p { 
+	font-family: verdana; 
+	font-size: 20px;
+}
+h3 { 
+	color: red; 
+	text-align: center;
+}
+#h3a { 
+	color: green; 
+	text-align: center;
+	font-size: 20px;
+}
+#para1 { 
+	font-family: verdana; 
+	font-size: 20px;
+	text-align: center;
+	color:white; 
+}
+</style>
+
+</head>
+<h1>META NUP OFFICIAL WEB</h1>
+</br>
+</br>
+<h2>WELCOME</h2>
+<p>Welcome to the meta, this size maked for training and learning reasons. I put love, time and passion to make it beatifull, good and user friendly.</p>
+<p>Power by hate!</p>
+</br>
+</br>
+</br>
+<h3>Information:</h3>
+<p>I am study in Neapolis University(NUP) at Paphos. Paphos also is my city, i wish to enjoy the site!</p>
+<a href="http://www.nup.ac.cy">Neapolis University [NUP]</a> </br></br>
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.nup.ac.cy%2F&psig=AOvVaw096fzixiFG6QUgGfgfE64z&ust=1647206066139000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMi_h_e-wfYCFQAAAAAdAAAAABAD" alt="Neapolis [NUP] IMG" width="200" height="100">
+</br>
+</br>
+</br>
+<h3>Video - Social Media:</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0-NHQ7qSsQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</br>
+</br>
+</br>
+<a href="https://lms.nup.ac.cy/"><button>NUP Moodle Web Site</button></a>
+</br>
+</br>
+</br>
+<h3>Fuction and Meaning:</h3>
+<p id="para1">The meaning of the site is to take some information just for fun, also interface with the user too show little activite and some interesting action.</p>
+</br>
+</br>
+</br>
+<h3 id="h3a">Please fill all the texts at the Form:</h3>
+<form style="text-align: center; action="/notification.html" > <br>
+Name:<br> 
+<input type="text" name="firstname" value="" required>><br>  
+Surname:<br> 
+<input type="text" name="lastname" value="" required>><br>
+Anddress:<br> 
+<input type="text" name="anddress" value="" required>><br>
+Street Number:<br> 
+<input type="number" name="streetnumber" value="" required>><br>    
+Post Code:<br> 
+<input type="number" name="number" value="" required>><br>  
+<br> 
+<input type="radio" name="gender" value="male" checked> Male<br> 
+<input type="radio" name="gender" value="female"> Female<br> 
+<br> 
+<select name="animals" size="3" multiple> 
+<option value="cats">Cats</option> 
+<option value="dogs">Dogs</option> 
+<option value="snakes">Snakes</option> 
+</select><br><br>
+<select name="theme" size="3" multiple> 
+<option value="car">Car</option> 
+<option value="bike">Bike</option> 
+<option value="walk">Walk</option> 
+</select><br><br>
+Birth Date:<br>
+<input type="date" name="bday" max=”2000-12-31"><br><br><br>
+<b>Upload something for you:</b><br>  
+<input type="file" name="img" multiple><br><br><br>
+Description-Rules:<br>
+<textarea name="message" style="width:300px; height:400px">
+You can accept the rules to forward!
+Wish All the Best!
+power by the Web Team.
+</textarea><br><br>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> Accept </label><br><br> 
+<input type="submit" value="Submit">
+</form><br><br><br>
+<form style="text-align: center;><br>
+<h1 id="javascript">Add tree values:</h1><br>
+a: <input type="number" name="number1" id="a"><br>
+b: <input type="number" name="number2" id="b"><br>
+c: <input type="number" name="number3" id="c"><br>
+<form/>
+<p>Sum of all arguments:</p>
+<p id="demo"></p>
+<button onclick="sumAll()"> Click Me </button>
+<script>
+function sumAll() {
+ var x,y,z;
+ var sum = 0;
+
+x = document.getElementById('a').value;
+y = document.getElementById('b').value;
+z = document.getElementById('c').value;
+
+x = parseFloat(x);
+y = parseFloat(y);
+z = parseFloat(z);
+
+sum = x + y + z;
+ 
+document.getElementById("demo").innerHTML = sum;
+}
+</script>
+
+</body>
+</html
